@@ -1,0 +1,7 @@
+.button {
+  transition: all 0.2s ease-in-out;
+}
+.button:hover {
+  box-shadow: 0 0 5px var(--color-1), 0 0 25px var(--color-1),
+    0 0 75px var(--color-1);
+}

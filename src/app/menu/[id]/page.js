@@ -1,5 +1,6 @@
 import React from "react";
 import PageIntro from "~/components/layout/PageIntro";
+import Pricing from "~/components/pricing";
 
 import { getMenuById } from "~/utils";
 
@@ -9,6 +10,7 @@ const page = ({ params }) => {
   return (
     <>
       <PageIntro heading={menu.name} text={menu.description} />
+      <Pricing items={menu.meals} />
     </>
   );
 };

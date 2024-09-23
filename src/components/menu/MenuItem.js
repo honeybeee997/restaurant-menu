@@ -11,7 +11,8 @@ const MenuItem = ({ dish }) => {
       className="h-72 md:h-80 w-full relative overflow-hidden rounded-2xl"
       initial={{ filter: "blur(5px)", y: 50, opacity: 0 }}
       whileInView={{ filter: "blur(0px)", y: 0, opacity: 1 }}
-      viewport={{ once: true, amount: 0.5 }}
+      viewport={{ once: true, amount: 0.01 }}
+      transition={{ delay: 0.2 }}
     >
       <Link href={`/menu/${dish.id}`}>
         <Image
@@ -28,7 +29,7 @@ const MenuItem = ({ dish }) => {
             initial={{ y: 47 }}
             whileInView={{ y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.3 }}
+            transition={{ delay: 0.4 }}
           >
             {dish.name}
           </motion.h3>

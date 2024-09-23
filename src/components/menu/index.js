@@ -1,16 +1,17 @@
 import React from "react";
 
 import MenuItem from "./MenuItem";
+import Grid from "../layout/Grid";
 
 import { MENU } from "~/constants";
 
 const Menu = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <Grid>
       {MENU.map((dish) => (
         <MenuItem key={dish.id} dish={dish} />
       ))}
-    </div>
+    </Grid>
   );
 };
 
