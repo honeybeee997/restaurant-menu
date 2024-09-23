@@ -5,9 +5,6 @@ import Layout from "~/components/layout";
 export const metadata = {
   title: "Menu",
   description: "A restaurant menu",
-  icons: {
-    icon: "/assets/brand/favicon.ico",
-  },
 };
 
 import "./globals.css";
